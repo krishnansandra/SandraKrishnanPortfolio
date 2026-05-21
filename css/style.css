@@ -1,6 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 #home{
     background-image: url('../images/hero.jpg');
@@ -24,7 +27,8 @@ html{
     border: 5px solid #0f1010;
 }
 #about{
-    background-color: #383939;
+    
+    background-color: #1e1e2f;
 }
 .description p{
    
@@ -33,16 +37,18 @@ html{
     padding: 10px;
 
 }
-h1{
-    font-size: 40px;
-    margin: 20px;
-    padding: 20px;
-    color: #f4f6f8;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
+
 .card{
     transition: transform 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.section-title{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
 }
 
 .card:hover{
@@ -106,6 +112,14 @@ form{
         }
 .btn{
     transition: 0.3s;
+}
+.btn-primary{
+    background: linear-gradient(45deg, #0d6efd, #00b4d8);
+    border: none;
+}
+
+.btn-primary:hover{
+    transform: scale(1.05);
 }
 
 .btn:hover{
